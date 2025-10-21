@@ -49,23 +49,23 @@ def handler(event, context):
     outcome_mapping = {
         '9e0f74bb-1522-4413-bf38-3d71276708ff': {
             'name': 'Hotel Belleclaire',
-            'segment_id': 'YOUR_FLODESK_SEGMENT_ID_HERE'
+            'segment_id': '68f7b60e338a9cff5f4e54b5'
         },
         '06a84dcb-3231-4999-bd9d-74137190705c': {
             'name': 'La Coralina Island House',
-            'segment_id': 'YOUR_FLODESK_SEGMENT_ID_HERE'
+            'segment_id': '68f7b61f7119e3c1271fc92d'
         },
         '53dcda87-86e3-44d8-ba39-443a2c0f6d65': {
             'name': 'Montage Palmetto Bluff',
-            'segment_id': 'YOUR_FLODESK_SEGMENT_ID_HERE'
+            'segment_id': '68f7b64e3681b4ba91ccbfdd'
         },
         '53092c01-ce8a-4ebe-a872-b64e8c255e4f': {
             'name': 'Hotel Jerome',
-            'segment_id': 'YOUR_FLODESK_SEGMENT_ID_HERE'
+            'segment_id': '68f7b66cd2bad750bd2c0922'
         },
         'c99d2f8e-5430-49d8-a3a8-1fd520c5f0ca': {
             'name': 'Chapter Roma',
-            'segment_id': 'YOUR_FLODESK_SEGMENT_ID_HERE'
+            'segment_id': '68f7b67fd2bad750bd2c0924'
         }
     }
     
