@@ -23,21 +23,23 @@ exports.handler = async (event, context) => {
     const variables = formResponse.variables || [];
     const answers = formResponse.answers || [];
 
-    // Get user email and name from Contact Info field
+    // Get user email and name
     let email = null;
     let firstName = null;
-    let lastName = null;
     
     for (const answer of answers) {
-        // Check for standalone email field
+        // Get email
         if (answer.type === 'email') {
             email = answer.email;
         }
-        // Check for contact info field (has email, first_name, last_name)
+        // Get first name from short_text field
+        else if (answer.type === 'text' && answer.field && answer.field.title === 'First name') {
+            firstName = answer.text;
+        }
+        // Also check for contact_info in case you switch later
         else if (answer.type === 'contact_info') {
             email = answer.email;
             firstName = answer.first_name;
-            lastName = answer.last_name;
         }
     }
 
@@ -66,3 +68,20 @@ exports.handler = async (event, context) => {
 
     // Map outcome IDs to hotel names and Flodesk segment IDs
     const outcomeMapping = {
+        '9e0f74bb-1522-4413-bf38-3d71276708ff': {
+            name: 'Hotel Belleclaire',
+            segmentId: '68f7b60e338a9cff5f4e54b5'
+        },
+        '06a84dcb-3231-4999-bd9d-74137190705c': {
+            name: 'La Coralina Island House',
+            segmentId: '68f7b61f7119e3c1271fc92d'
+        },
+        '53dcda87-86e3-44d8-ba39-443a2c0f6d65': {
+            name: 'Montage Palmetto Bluff',
+            segmentId: '68f7b64e3681b4ba91ccbfdd'
+        },
+        '53092c01-ce8a-4ebe-a872-b64e8c255e4f': {
+            name: 'Hotel Jerome',
+            segmentId: '68f7b66cd2bad750bd2c0922'
+        },
+        'c99d2f8e-5430-49d8-a3
