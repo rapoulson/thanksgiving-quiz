@@ -46,12 +46,12 @@ exports.handler = async (event, context) => {
     }
 
     let winningOutcomeId = null;
-    for (const variable of variables) {
-        if (variable.key === 'winning_outcome_id') {
-            winningOutcomeId = variable.text;
-            break;
-        }
+for (const variable of variables) {
+    if (variable.key === 'winning_outcome_id') {
+        winningOutcomeId = variable.text || variable.outcome_id;
+        break;
     }
+}
 
     if (!winningOutcomeId) {
         return {
