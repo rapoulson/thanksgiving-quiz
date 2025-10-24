@@ -61,27 +61,47 @@ for (const variable of variables) {
     }
 
     const outcomeMapping = {
-        '9e0f74bb-1522-4413-bf38-3d71276708ff': {
-            name: 'Hotel Belleclaire',
-            segmentId: '68f7b60e338a9cff5f4e54b5'
-        },
-        '06a84dcb-3231-4999-bd9d-74137190705c': {
-            name: 'La Coralina Island House',
-            segmentId: '68f7b61f7119e3c1271fc92d'
-        },
-        '53dcda87-86e3-44d8-ba39-443a2c0f6d65': {
-            name: 'Montage Palmetto Bluff',
-            segmentId: '68f7b64e3681b4ba91ccbfdd'
-        },
-        '53092c01-ce8a-4ebe-a872-b64e8c255e4f': {
-            name: 'Hotel Jerome',
-            segmentId: '68f7b66cd2bad750bd2c0922'
-        },
-        'c99d2f8e-5430-49d8-a3a8-1fd520c5f0ca': {
-            name: 'Chapter Roma',
-            segmentId: '68f7b67fd2bad750bd2c0924'
-        }
-    };
+    '9e0f74bb-1522-4413-bf38-3d71276708ff': {
+        name: 'Hotel Belleclaire',
+        segmentId: '68f7b60e338a9cff5f4e54b5'
+    },
+    'U1EBBBZmHW0w': {
+        name: 'Hotel Belleclaire',
+        segmentId: '68f7b60e338a9cff5f4e54b5'
+    },
+    '06a84dcb-3231-4999-bd9d-74137190705c': {
+        name: 'La Coralina Island House',
+        segmentId: '68f7b61f7119e3c1271fc92d'
+    },
+    'yo4rrrGb2iuQ': {
+        name: 'La Coralina Island House',
+        segmentId: '68f7b61f7119e3c1271fc92d'
+    },
+    '53dcda87-86e3-44d8-ba39-443a2c0f6d65': {
+        name: 'Montage Palmetto Bluff',
+        segmentId: '68f7b64e3681b4ba91ccbfdd'
+    },
+    'kjwnrmq94o1Z': {
+        name: 'Montage Palmetto Bluff',
+        segmentId: '68f7b64e3681b4ba91ccbfdd'
+    },
+    '53092c01-ce8a-4ebe-a872-b64e8c255e4f': {
+        name: 'Hotel Jerome',
+        segmentId: '68f7b66cd2bad750bd2c0922'
+    },
+    '8fo2TGMRz4W9': {
+        name: 'Hotel Jerome',
+        segmentId: '68f7b66cd2bad750bd2c0922'
+    },
+    'c99d2f8e-5430-49d8-a3a8-1fd520c5f0ca': {
+        name: 'Chapter Roma',
+        segmentId: '68f7b67fd2bad750bd2c0924'
+    },
+    '5Cpw1u23QUVz': {
+        name: 'Chapter Roma',
+        segmentId: '68f7b67fd2bad750bd2c0924'
+    }
+};
 
     const result = outcomeMapping[winningOutcomeId];
 
